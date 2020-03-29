@@ -7,6 +7,9 @@
   <name>Beautiful Water (Fork)</name>
   <author>CrunchyDuck, Oken</author>
   <packageId>nathanielcwm.BeautifulWater</packageId>
+  <incompatibleWith>
+    <li>crunchyduck.beautifulwater</li>
+  </incompatibleWith>
   <description>Makes water have a beauty value, as it should.
   
 Changes water tiles from their neutral 0 beauty value, to:
