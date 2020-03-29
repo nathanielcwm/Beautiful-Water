@@ -40,12 +40,25 @@
             </statBases>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>5</Beauty>
-            </statBases>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Impassable Chest-deep Water</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+            <value>
+                <statBases>
+                    <Beauty>15</Beauty>
+                </statBases>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+            <value>
+                <statBases>
+                    <Beauty>5</Beauty>
+                </statBases>
+            </value>
+        </nomatch>
     </Operation>
 </Patch>
