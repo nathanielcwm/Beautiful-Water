@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
 	<value>
@@ -45,7 +44,7 @@
     </statBases>
 	</value>
   </Operation>
-  
+
   <Operation Class="PatchOperationAdd">
 	  <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
 	  <value>
@@ -55,19 +54,3 @@
         </value>
 	</Operation>
 </Patch>
-	  
-
-
-  <!-- Old code
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>8</Beauty>
-    </statBases>
-	</value>
-  </Operation>-->
-
-
-
-
