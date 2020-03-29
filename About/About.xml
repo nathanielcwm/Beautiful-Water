@@ -2,9 +2,11 @@
 <ModMetadata>
 	<supportedVersions>
 		<li>1.0</li>
+    <li>1.1</li>
 	</supportedVersions>
   <name>Beautiful Water</name>
   <author>CrunchyDuck, Oken</author>
+  <packageId>nathanielcwm.BeautifulWater</packageId>
   <description>Makes water have a beauty value, as it should.
   
 Changes water tiles from their neutral 0 beauty value, to:

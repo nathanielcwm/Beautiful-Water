@@ -1,0 +1,7 @@
+<loadFolders>
+  <v1.1>
+    <li>1.1</li>
+    <li IfModActive="DropbearNinja.ImpassableChestdeepWater">impassablechestdeepwaterpatch</li>
+    <li IfModActive="400.ImpassableHChestUdeepHWater">impassablechestdeepwaterpatch</li>
+  </v1.1>
+</loadFolders>
