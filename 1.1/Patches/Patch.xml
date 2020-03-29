@@ -1,56 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>1</Beauty>
-    </statBases>
-	</value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>5</Beauty>
-    </statBases>
-	</value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>25</Beauty>
-    </statBases>
-	</value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>15</Beauty>
-    </statBases>
-	</value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
-	<value>
-	  <statBases>
-      <Beauty>1</Beauty>
-    </statBases>
-	</value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-	  <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
-	  <value>
-	    <statBases>
-            <Beauty>5</Beauty>
-          </statBases>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>1</Beauty>
+            </statBases>
         </value>
-	</Operation>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>5</Beauty>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>25</Beauty>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>15</Beauty>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>1</Beauty>
+            </statBases>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+        <value>
+            <statBases>
+                <Beauty>5</Beauty>
+            </statBases>
+        </value>
+    </Operation>
 </Patch>
