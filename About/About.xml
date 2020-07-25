@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ModMetadata>
+<ModMetaData>
+    <modDependencies>
+        <li>
+            <packageId>UnlimitedHugs.HugsLib</packageId>
+            <displayName>HugsLib</displayName>
+            <downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>UnlimitedHugs.HugsLib</li>
+    </loadAfter>
     <supportedVersions>
         <li>0.18</li>
         <li>0.19</li>
@@ -39,4 +50,4 @@ Water that you can't walk in is treated as a wall by the game, and therefore the
 ††
 I use a mod for impassable chest deep water, which similarly turns these tiles in to "wall-like" tiles. So, while using this mod, it makes sense to also boost it. But, I know most people do not use this mod.
 I added some code to check whether or not this mod is loaded. If it isn't, I use the default value (5). If it is, I use the updated value (15).</description>
-</ModMetadata>
+</ModMetaData>
