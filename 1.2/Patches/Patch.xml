@@ -4,7 +4,7 @@
         <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
         <value>
             <statBases>
-                <Beauty>1</Beauty>
+                <Beauty>BeautyConfig</Beauty>
             </statBases>
         </value>
     </Operation>
