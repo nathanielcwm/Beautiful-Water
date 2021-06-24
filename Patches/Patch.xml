@@ -1,64 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>1</Beauty>
-            </statBases>
-        </value>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="WaterShallow"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="WaterShallow"]/statBases/Beauty</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="WaterShallow"]/statBases/Beauty/text()</xpath>
+                        <value>1</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="WaterShallow"]/statBases</xpath>
+                        <value>
+                            <Beauty>1</Beauty>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="WaterShallow"]</xpath>
+                    <value>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>5</Beauty>
-            </statBases>
-        </value>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="WaterMovingShallow"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="WaterMovingShallow"]/statBases/Beauty</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="WaterMovingShallow"]/statBases/Beauty/text()</xpath>
+                        <value>1</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="WaterMovingShallow"]/statBases</xpath>
+                        <value>
+                            <Beauty>1</Beauty>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
+                    <value>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>25</Beauty>
-            </statBases>
-        </value>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]/statBases/Beauty</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]/statBases/Beauty/text()</xpath>
+                        <value>5</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]/statBases</xpath>
+                        <value>
+                            <Beauty>5</Beauty>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+                    <value>
+                        <statBases>
+                            <Beauty>5</Beauty>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>15</Beauty>
-            </statBases>
-        </value>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="WaterOceanDeep"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="WaterOceanDeep"]/statBases/Beauty</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="WaterOceanDeep"]/statBases/Beauty/text()</xpath>
+                        <value>25</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="WaterOceanDeep"]/statBases</xpath>
+                        <value>
+                            <Beauty>25</Beauty>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
+                    <value>
+                        <statBases>
+                            <Beauty>25</Beauty>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
-        <value>
-            <statBases>
-                <Beauty>1</Beauty>
-            </statBases>
-        </value>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="WaterDeep"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="WaterDeep"]/statBases/Beauty</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="WaterDeep"]/statBases/Beauty/text()</xpath>
+                        <value>15</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="WaterDeep"]/statBases</xpath>
+                        <value>
+                            <Beauty>15</Beauty>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="WaterDeep"]</xpath>
+                    <value>
+                        <statBases>
+                            <Beauty>15</Beauty>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
     </Operation>
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Impassable Chest-deep Water</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
-            <value>
-                <statBases>
-                    <Beauty>15</Beauty>
-                </statBases>
-            </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
-            <value>
-                <statBases>
-                    <Beauty>5</Beauty>
-                </statBases>
-            </value>
-        </nomatch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Impassable Chest-deep Water</li>
+                </mods>
+                <match>
+                    <li Class="PatchOperationConditional">
+                        <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases</xpath>
+                        <match Class="PatchOperationConditional">
+                            <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases/Beauty</xpath>
+                            <match Class="PatchOperationReplace">
+                                <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases/Beauty/text()</xpath>
+                                <value>15</value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases</xpath>
+                                <value>
+                                    <Beauty>15</Beauty>
+                                </value>
+                            </nomatch>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+                            <value>
+                                <statBases>
+                                    <Beauty>15</Beauty>
+                                </statBases>
+                            </value>
+                        </nomatch>
+                    </li>
+                </match>
+                <nomatch>
+                    <li Class="PatchOperationConditional">
+                        <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases</xpath>
+                        <match Class="PatchOperationConditional">
+                            <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases/Beauty</xpath>
+                            <match Class="PatchOperationReplace">
+                                <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases/Beauty/text()</xpath>
+                                <value>5</value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]/statBases</xpath>
+                                <value>
+                                    <Beauty>5</Beauty>
+                                </value>
+                            </nomatch>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+                            <value>
+                                <statBases>
+                                    <Beauty>5</Beauty>
+                                </statBases>
+                            </value>
+                        </nomatch>
+                    </li>
+                </nomatch>
+            </Operation>
+        </operations>
     </Operation>
 </Patch>

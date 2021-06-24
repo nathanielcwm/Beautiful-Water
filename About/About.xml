@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
     <supportedVersions>
-        <li>0.18</li>
-        <li>0.19</li>
         <li>1.0</li>
         <li>1.1</li>
         <li>1.2</li>
@@ -13,9 +11,11 @@
     <incompatibleWith>
         <li>crunchyduck.beautifulwater</li>
     </incompatibleWith>
-    <description>Makes water have a beauty value, as it should.
-  
-Changes water tiles from their neutral 0 beauty value, to:
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Meltup.BeautifulOutdoors</li>
+    </loadAfter>
+    <description>Changes water tiles from their neutral 0 beauty value, to:
 
   * Shallow Water - 1
   * Shallow Moving Water - 1
@@ -24,20 +24,10 @@ Changes water tiles from their neutral 0 beauty value, to:
   * Deep Ocean Water - 20†
   * Deep Water - 15†
   
- 
-   
-I designed this because, while making a water-side cabin, I realized that they do not appreciate all the work I'm putting in just for them to have a cool home.
-I thought it only made sense for ocean water to have a much higher value, because of the pretty scene the pawns should be able to see from it. Unless you build a wall in the way or something, you monster.
-
-Thanks to Oken for making the thumbnails, and for helping decide on the beauty values.
- 
- 
 Footnotes: 
-
 †
-Water that you can't walk in is treated as a wall by the game, and therefore the beauty for these tiles only goes to a depth of 1. When designing this mod, I didn't know this, so I when I came to this, I decided to adjust the values of these tiles much higher.
-
+Water that you can't walk in is treated as a wall by the game, and therefore the beauty for these tiles only goes to a depth of 1.
 ††
-I use a mod for impassable chest deep water, which similarly turns these tiles in to "wall-like" tiles. So, while using this mod, it makes sense to also boost it. But, I know most people do not use this mod.
-I added some code to check whether or not this mod is loaded. If it isn't, I use the default value (5). If it is, I use the updated value (15).</description>
+There are mods that make Chest-Deep Moving Water impassable. If they are installed the beauty is bumped to 15.
+</description>
 </ModMetaData>
