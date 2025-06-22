@@ -144,4 +144,33 @@
             </li>
         </operations>
     </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases</xpath>
+                <match Class="PatchOperationConditional">
+                    <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases/BeautyOutdoors</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases/BeautyOutdoors/text()</xpath>
+                        <value>-1</value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases</xpath>
+                        <value>
+                            <BeautyOutdoors>-1</BeautyOutdoors>
+                        </value>
+                    </nomatch>
+                </match>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+                    <value>
+                        <statBases>
+                            <BeautyOutdoors>15</BeautyOutdoors>
+                        </statBases>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
+    </Operation>
 </Patch>
