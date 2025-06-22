@@ -166,7 +166,7 @@
                     <xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
                     <value>
                         <statBases>
-                            <BeautyOutdoors>15</BeautyOutdoors>
+                            <BeautyOutdoors>-1</BeautyOutdoors>
                         </statBases>
                     </value>
                 </nomatch>
